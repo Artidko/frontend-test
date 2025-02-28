@@ -1,0 +1,194 @@
+/* ปรับแต่งหน้าตาแบบ Minimal */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.search-box {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.filter-select {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.add-user-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-user-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.user-table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.user-table th {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    font-weight: 600;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.user-table tr:hover {
+    background-color: #e9f5ff;
+    transition: background-color 0.3s ease;
+}
+
+.user-table .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.user-table .btn-warning {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    border: none;
+    color: white;
+}
+
+.user-table .btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+}
+
+.user-table .btn-danger {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: none;
+    color: white;
+}
+
+.user-table .btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1.5rem;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 1rem;
+    background: #f8f9fa;
+}
+
+.modal-footer .btn-secondary {
+    background: #6c757d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+.modal-footer .btn-primary {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
